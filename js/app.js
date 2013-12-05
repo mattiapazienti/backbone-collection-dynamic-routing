@@ -1,4 +1,3 @@
-
     var Player = Backbone.Model.extend({
         defaults: {
             name: 'default',
@@ -44,22 +43,22 @@
         },
         {
             name: 'Carles Puyol',
-            position: 'back',
+            position: 'defender',
             number: 5
         },
         {
             name: 'Gerard Pique',
-            position: 'back',
+            position: 'defender',
             number: 3
         },
         {
             name: 'Jordi Alba',
-            position: 'back',
+            position: 'defender',
             number: 18
         },
         {
             name: 'Martin Montoya',
-            position: 'back',
+            position: 'defender',
             number: 2
         },
         {
