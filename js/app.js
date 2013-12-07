@@ -68,6 +68,7 @@
         }     
     ]); 
     
+    // team view all players
     var TeamView = Backbone.View.extend({
         tagName: 'ul',
         className: 'list',
@@ -87,7 +88,7 @@
         }
     });
     
-    
+    // player view populating tpl
     var PlayerView = Backbone.View.extend({
         tagName: 'li',
         template: _.template($('#template').html()),
@@ -97,10 +98,12 @@
         }
     });
     
+    // example using events
     StatsView = function () {
         $(".stat").html('<h2>Stats for player number ' + e + ' </h2>');
       };
 
+    // start app
     var teamView = new TeamView({ collection: Team });
     $(document.body).append(teamView.render().el);
     
